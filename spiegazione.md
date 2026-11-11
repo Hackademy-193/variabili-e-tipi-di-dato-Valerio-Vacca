@@ -83,3 +83,35 @@ quando in output ho un NaN (Not a Number), lo devo risolvere subito! Perché qua
 
 TYPE COERCION -> è la capacità che possiede javascript di riconoscere che due operandi, quando c'è il simbolo + in mezzo, se sono di tipi diversi, prova comunque a vedere se riesce a convertire nella concatenazione un tipo di dato nell'altro
 se ci riesce mi restituirà un valore (che dobbiamo comunque controllare se era quello che volevamo ottenre), se non dovesse riuscire a fare la type coercion, riceveremo in output un bel NaN
+
+il papà di tutte le operazioni matematiche, si chiama Math
+
+Math.round() -> arrotonda i numeri con la virgola.
+dopo la virgola, se il numero va da 1 a 4, arrotonda per difetto
+dopo la virgola, se il numero va da 5 a 9, arrotonda per eccesso
+
+Math.floor() -> arrotonda sempre per difetto
+Math.ceil() -> arrotonda sempre per eccesso
+
+Math.random() -> genera un numero casuale da 0 a 1 escluso
+
+Math.max() -> mi estrapola in mumero maggiore
+Math.min() -> mi estrapola in muero minore
+
+CONCATENAZIONE TRA STRINGHE
+'' -> apici singoli -> non riescono a leggere gli apostrofi
+"" -> apici doppi -> riescono a leggere gli apostrofi
+`` -> backtick -> riescono a leggere gli apostrofi, ma posso fare la string interpolation
+
+OPERATORI DI CONFRONTO
+>
+<
+>=
+<=
+=== -> verifica se è uguale, non solo come valore ma anche come tipo di dato
+!= -> diverso da
+!== -> strettamente diverso
+
+OPERATORI LOGICI
+&& -> e -> lo uso quando mi serve un controllo + restrittivo! perché per avere true in uscita, tutte e due le condizioni devono essere true (verificate)
+|| -> o -> lo uso quando posso fare un controllo + tranquillo perché per avere true in uscita, mi basta che una sola delle due condizioni è verificata
