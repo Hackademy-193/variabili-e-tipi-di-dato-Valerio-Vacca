@@ -160,25 +160,48 @@
 // e calcola quanti punti vita restano a donato dopo l'attacco di Pikachu - fatto
 // infine controlla se donato è ancora vivo (se i suoi punti vita sono maggiori di 0)
 
-let nomePokemon1 = "Pikachu"; 
-let vitaPikachu = 100;
-let attaccoPikachu = Math.floor(Math.random() * (200 - 20 + 1) + 20);
-let difesaPikachu = 10;
+// let nomePokemon1 = "Pikachu"; 
+// let vitaPikachu = 100;
+// let attaccoPikachu = Math.floor(Math.random() * (200 - 20 + 1) + 20);
+// let difesaPikachu = 10;
 
-let nomePokemon2 = "Donatomon";
-let vitaDonatomon = 90;
-let attaccoDonatomon = 30;
-let difesaDonatomon = 8;
+// let nomePokemon2 = "Donatomon";
+// let vitaDonatomon = 90;
+// let attaccoDonatomon = 30;
+// let difesaDonatomon = 8;
 
 
-let dannoPikachu = attaccoPikachu - difesaDonatomon;
+// let dannoPikachu = attaccoPikachu - difesaDonatomon;
 
-vitaDonatomon = vitaDonatomon - dannoPikachu;
+// vitaDonatomon = vitaDonatomon - dannoPikachu;
 
-let donatomonVivo = vitaDonatomon > 0;
+// let donatomonVivo = vitaDonatomon > 0;
 
-console.log(nomePokemon1 + " attacca " + nomePokemon2);
-console.log(`L'attacco di ${nomePokemon1} in questo turno è di ${attaccoPikachu}`);
-console.log(`Danno inflitto: ${dannoPikachu}`);
-console.log(`Vita restante di ${nomePokemon2}: ${vitaDonatomon}`);
-console.log(`${nomePokemon2} è ancora vivo? ${donatomonVivo}`);
+// console.log(nomePokemon1 + " attacca " + nomePokemon2);
+// console.log(`L'attacco di ${nomePokemon1} in questo turno è di ${attaccoPikachu}`);
+// console.log(`Danno inflitto: ${dannoPikachu}`);
+// console.log(`Vita restante di ${nomePokemon2}: ${vitaDonatomon}`);
+// console.log(`${nomePokemon2} è ancora vivo? ${donatomonVivo}`);
+
+
+// && -> mi ritorna il primo operando FALSY che trova. Se non trova nessun operando FALSY, mi restituisce l'ultimo operando TRUTHY che trova.
+
+// || -> l'or mi restituisce il primo operando TRUTHY che trova. Se non trova nessun operando TRUTHY, mi restituisce l'ultimo operando FALSY che trova.
+
+console.log(true && 10);
+console.log(false && 0);
+console.log(3 > 2 || 5 > 10);
+
+
+// QUALI SONO GLI OPERANDI TRUTHY?
+// - numeri diversi da 0 e NaN
+// - stringhe non vuote (apici che contengono qualcosa)
+// - true (il booleano true è un truthy)
+// - oggetti
+
+// QUALI SONO GLI OPERANDI FALSY?
+// - lo 0 e il NaN
+// - stringhe vuote (apici che non contengono qualcosa)
+// - false (il booleano false è un falsy)
+// - null
+// - undefined

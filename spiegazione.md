@@ -115,3 +115,21 @@ OPERATORI DI CONFRONTO
 OPERATORI LOGICI
 && -> e -> lo uso quando mi serve un controllo + restrittivo! perché per avere true in uscita, tutte e due le condizioni devono essere true (verificate)
 || -> o -> lo uso quando posso fare un controllo + tranquillo perché per avere true in uscita, mi basta che una sola delle due condizioni è verificata
+
+&& -> mi ritorna il primo operando FALSY che trova. Se non trova nessun operando FALSY, mi restituisce il primo operando TRUTHY che trova.
+
+|| -> l'or mi restituisce il primo operando TRUTHY che trova. Se non trova nessun operando TRUTHY, mi restituisce l'ultimo operando FALSY che trova.
+
+
+QUALI SONO GLI OPERANDI TRUTHY?
+- numeri diversi da 0 e NaN
+- stringhe non vuote (apici che contengono qualcosa)
+- true (il booleano true è un truthy)
+- oggetti
+
+QUALI SONO GLI OPERANDI FALSY?
+- lo 0 e il NaN
+- stringhe vuote (apici che non contengono qualcosa)
+- false (il booleano false è un falsy)
+- null
+- undefined
